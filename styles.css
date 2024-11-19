@@ -1,0 +1,93 @@
+* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+#navbar {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Welcome Section */
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#welcome-section h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 20px;
+    background-color: #e9e9e9;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.project-tile {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.project-tile a {
+    font-size: 1.5rem;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.project-tile a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    #welcome-section h1 {
+        font-size: 2rem;
+    }
+
+    #projects h2 {
+        font-size: 1.5rem;
+    }
+
+    .project-tile a {
+        font-size: 1.2rem;
+    }
+}
